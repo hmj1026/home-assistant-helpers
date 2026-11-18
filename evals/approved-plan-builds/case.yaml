@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: approved-plan-builds
+expected_outcome: |
+  With an approved plan, builds the dashboard as a new YAML dashboard: backs up configuration.yaml first, registers the dashboard, writes the views in plan order with confirmations on the lock and garage, updates view statuses, and hands the config check to the user.
+context:
+  scaffold_script: place-files.sh

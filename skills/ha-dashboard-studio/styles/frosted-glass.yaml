@@ -1,0 +1,32 @@
+# Style rules for frosted-glass. Applied during Build; each check is verified at handover.
+id: frosted-glass
+sketch: |
+  ░░░░░░ your photo ░░░░░░░░░░░
+  ░ ╭ On now ───────────────╮ ░
+  ░ │ Living light · AC 24°  │ ░
+  ░ ╰────────────────────────╯ ░
+  ░ ╭ Living ╮ ╭ Bedroom ╮       ░
+  ░ ╰ 23°   ╯ ╰ 22°     ╯       ░
+needs:
+- name: A glass or blur theme
+  why: draws the translucent card surfaces
+  source: HACS → Themes, searching for glass or blur
+- name: A wallpaper image
+  why: the glass effect only shows over a picture
+  source: The user's own photo, copied to `/config/www/studio/` and served as `/local/studio/<file>`
+rules:
+- do: Ask for the wallpaper image in the plan review (the look depends on it; a calm, low-detail photo
+    works best) and record it as `look.background`.
+  check: '`look.background` names the image and the file exists under `www/studio/`.'
+- do: Set the image as each view's background (the view `background` option) so the wallpaper stays even
+    when the theme does not supply one.
+  check: Every view has a `background` pointing at the wallpaper.
+- do: Set `theme` on each view to the glass theme the user installed (its name as listed under Profile
+    → Theme).
+  check: Every view's `theme` matches an installed theme name; the theme file is present in the themes
+    folder.
+- do: 'Use fewer, larger cards: one section per room or topic, generous spacing.'
+  check: No view has more than six sections.
+- do: 'Record the fallback in the plan''s install entry: without a glass theme, keep the wallpaper and
+    use native-minimal''s rules.'
+  check: 'The glass theme''s entry under `installs` has `fallback: native-minimal`.'

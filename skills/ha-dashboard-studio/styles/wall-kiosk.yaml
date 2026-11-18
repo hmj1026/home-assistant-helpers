@@ -1,0 +1,26 @@
+# Style rules for wall-kiosk. Applied during Build; each check is verified at handover.
+id: wall-kiosk
+sketch: |
+  14:32  Wed 18 Nov        ☀ 19°   ✓ all quiet
+  ┌──────────┬──────────┬──────────┬──────────┐
+  │ LIVING   │ KITCHEN  │ HEATING  │ GOOD     │
+  │ on       │ off      │ 21°      │ NIGHT    │
+  └──────────┴──────────┴──────────┴──────────┘
+needs:
+- name: Kiosk Mode (optional)
+  why: hides header and sidebar for the tablet's account
+  source: 'HACS → Dashboard: https://github.com/NemesisRE/kiosk-mode, or the tablet browser''s own full-screen
+    mode'
+rules:
+- do: Size the main view for `screen.resolution` and `screen.orientation` in the plan.
+  check: The user confirms on the tablet that the main view needs no scrolling.
+- do: Put a clock, the date and the weather across the top, then the first-view rows.
+  check: The main view starts with a clock or weather card.
+- do: 'Make every card at least two grid rows tall and tap-only: set `hold_action` and `double_tap_action`
+    to `action: none`.'
+  check: 'Every card on the main view has `grid_options.rows` of 2 or more, and `hold_action` and `double_tap_action`
+    set to `action: none`.'
+- do: Propose a separate non-admin user for the tablet as a `user_actions` entry (the user creates it);
+    apply kiosk behaviour to that user only.
+  check: The plan lists the tablet user under `user_actions`, and kiosk settings (if any) are limited
+    to it.

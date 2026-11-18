@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: wall-tablet-plan
+expected_outcome: |
+  For a wall tablet, writes a single-screen plan sized to the stated resolution with large tap-only cards, keeps confirmations on the lock and garage, and stops for approval.
+context:
+  scaffold_script: place-files.sh

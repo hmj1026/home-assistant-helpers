@@ -1,0 +1,18 @@
+{
+  "name": "home-assistant-helpers",
+  "version": "0.1.0",
+  "description": "Skills that help you design, build and maintain Home Assistant setups with an AI coding agent.",
+  "author": {
+    "name": "hmj1026"
+  },
+  "license": "MIT",
+  "keywords": [
+    "home-assistant",
+    "lovelace",
+    "dashboard",
+    "smart-home",
+    "skills"
+  ],
+  "homepage": "https://github.com/hmj1026/home-assistant-helpers",
+  "repository": "https://github.com/hmj1026/home-assistant-helpers"
+}

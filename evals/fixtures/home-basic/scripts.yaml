@@ -1,0 +1,7 @@
+good_night:
+  alias: Good night
+  sequence:
+    - action: light.turn_off
+      target: {entity_id: all}
+    - action: lock.lock
+      target: {entity_id: lock.front_door}

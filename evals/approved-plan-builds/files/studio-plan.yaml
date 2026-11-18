@@ -1,0 +1,50 @@
+concept: {name: Calm rooms, style: native-minimal, layout: rooms, palette: spectrum, density: balanced}
+dashboard: {url_path: home-studio, title: Home, language: en, theme_for: this-dashboard}
+screen: {main: phone}
+look: {theme: null, background: null}
+write:
+  method: yaml-file
+  check: ask-user
+  restart_needed: true
+  files:
+    - configuration.yaml (dashboard registration)
+    - dashboards/home-studio.yaml
+    - .gitignore (backups line)
+installs: []
+user_actions: []
+changes_outside: []
+helpers: []
+views:
+  - id: now
+    title: Now
+    status: planned
+    sections:
+      - title: On now
+        items:
+          - {entity: light.living_ceiling, as: summary}
+          - {entity: light.kitchen, as: summary}
+      - title: Routines
+        items:
+          - {entity: script.good_night, as: owner}
+          - {entity: scene.movie_night, as: owner}
+  - id: living
+    title: Living room
+    status: planned
+    sections:
+      - title: Living room
+        items:
+          - {entity: light.living_ceiling, as: owner}
+          - {entity: climate.living_ac, as: owner}
+          - {entity: media_player.living_tv, as: owner}
+  - id: entrance
+    title: Entrance
+    status: planned
+    sections:
+      - title: Entrance
+        items:
+          - {entity: lock.front_door, as: owner, confirm: true}
+          - {entity: cover.garage_door, as: owner, confirm: true}
+needs_you: []
+approved: true
+log:
+  - "2026-11-18 user: approved"

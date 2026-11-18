@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "key": "core.entity_registry",
+  "data": {
+    "entities": [
+      {
+        "entity_id": "light.living_ceiling",
+        "area_id": "living_room",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "light.living_lamp",
+        "area_id": "living_room",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "climate.living_ac",
+        "area_id": "living_room",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "media_player.living_tv",
+        "area_id": "living_room",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "sensor.living_temperature",
+        "area_id": "living_room",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "sensor.living_humidity",
+        "area_id": "living_room",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "fan.living_purifier",
+        "area_id": "living_room",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "sensor.living_pm25",
+        "area_id": "living_room",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "light.kitchen",
+        "area_id": "kitchen",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "switch.dishwasher_plug",
+        "area_id": "kitchen",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "sensor.dishwasher_power",
+        "area_id": "kitchen",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "switch.fridge_plug",
+        "area_id": "kitchen",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "binary_sensor.kitchen_leak",
+        "area_id": "kitchen",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "binary_sensor.kitchen_smoke",
+        "area_id": "kitchen",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "light.bedroom",
+        "area_id": "bedroom",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "climate.bedroom_ac",
+        "area_id": "bedroom",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "sensor.bedroom_temperature",
+        "area_id": "bedroom",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "sensor.bedroom_humidity",
+        "area_id": "bedroom",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "binary_sensor.bedroom_window",
+        "area_id": "bedroom",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "light.kids_room",
+        "area_id": "kids_room",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "media_player.kids_speaker",
+        "area_id": "kids_room",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "lock.front_door",
+        "area_id": "entrance",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "cover.garage_door",
+        "area_id": "entrance",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "binary_sensor.front_door",
+        "area_id": "entrance",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "camera.front_porch",
+        "area_id": "entrance",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "binary_sensor.porch_motion",
+        "area_id": "entrance",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "sensor.front_door_battery",
+        "area_id": "entrance",
+        "platform": "demo"
+      },
+      {
+        "entity_id": "sensor.home_power",
+        "area_id": null,
+        "platform": "demo"
+      },
+      {
+        "entity_id": "update.home_assistant_core_update",
+        "area_id": null,
+        "platform": "demo"
+      },
+      {
+        "entity_id": "vacuum.robo",
+        "area_id": null,
+        "platform": "demo"
+      }
+    ]
+  }
+}
