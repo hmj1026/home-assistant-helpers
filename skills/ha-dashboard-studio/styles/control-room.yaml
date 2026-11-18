@@ -1,0 +1,26 @@
+# Style rules for control-room. Applied during Build; each check is verified at handover.
+id: control-room
+sketch: |
+  POWER 1.2 kW ▁▂▅▃▂   TODAY 7.9 kWh   NEEDS YOU 1
+  ───────────────────────────────────────────────
+  LIVING  23.1°  47%  ▂▃▄▃   │ NAS    ● 38 W
+  BEDROOM 21.8°  52%  ▃▃▂▂   │ ROUTER ● 9 W
+  AIR     PM2.5 6  CO₂ 610   │ UPS    100 %
+needs:
+- name: ApexCharts card (optional)
+  why: multi-series charts
+  source: 'HACS → Dashboard: https://github.com/RomRider/apexcharts-card; native statistics graphs work
+    without it'
+rules:
+- do: 'Open with one line of headline numbers: current power, today''s energy, and the needs-you count
+    kept visible (the "nothing to do" phrase at zero).'
+  check: The first section of the main view shows those three values, with no `visibility` condition on
+    the count.
+- do: Place each reading next to its own trend (Tile trend feature or a statistics graph).
+  check: Every numeric reading on the main view has a trend beside it.
+- do: Give charts of the same unit the same axis range on a view.
+  check: Charts sharing a unit on one view set identical min/max.
+- do: Use statistics for periods longer than the recorder keeps (`purge_keep_days`).
+  check: No history graph asks for more hours than the recorder keeps.
+- do: Show lists (energy per device, batteries) as compact rows.
+  check: Lists use an entities-style card, not one Tile per item.

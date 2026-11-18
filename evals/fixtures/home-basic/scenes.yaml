@@ -1,0 +1,9 @@
+- id: evening_relax
+  name: Evening relax
+  entities:
+    light.living_ceiling: {state: "on", brightness: 120}
+- id: movie_night
+  name: Movie night
+  entities:
+    light.living_ceiling: "off"
+    media_player.living_tv: "on"

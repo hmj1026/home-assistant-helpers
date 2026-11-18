@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: named-choice-honoured
+expected_outcome: |
+  Every concept or the plan keeps the style and density the user named; only the unnamed choices vary.
+context:
+  scaffold_script: place-files.sh

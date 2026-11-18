@@ -1,0 +1,26 @@
+# Style rules for soft-mushroom. Applied during Build; each check is verified at handover.
+id: soft-mushroom
+sketch: |
+  ( 2 need you ) ( 23° ) ( 3 lights ) ( 🔒 )
+  ╭────────╮ ╭────────╮ ╭────────╮
+  │  🛋     │ │  🛏     │ │  🧸     │
+  │ Living │ │Bedroom │ │ Kids   │
+  ╰────────╯ ╰────────╯ ╰────────╯
+     ▲ tap → pop-up with the room
+needs:
+- name: Mushroom
+  why: chips and rounded entity cards
+  source: 'HACS → Dashboard: https://github.com/piitaya/lovelace-mushroom'
+- name: Bubble Card
+  why: room pop-ups and room buttons
+  source: 'HACS → Dashboard: https://github.com/Clooos/Bubble-Card'
+rules:
+- do: 'Turn the first view''s Needs you and On now rows into one chip row: a chip per reason or per active
+    group, each tapping through.'
+  check: The first view has a chips card and no separate Needs you or On now sections.
+- do: Give each room a pop-up holding its owner cards, opened from a room button on the first view.
+  check: Every room button's target hash matches a pop-up on the dashboard.
+- do: Keep one card family per section (all Mushroom or all native).
+  check: No section mixes `custom:mushroom-*` cards with Tile cards.
+- do: 'Record fallbacks in the install entries: Bubble Card → sub-views per room, Mushroom → Tile cards.'
+  check: 'Each install entry is `confirmed: true` or has a `fallback`.'

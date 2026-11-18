@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: hands-off-plan-first
+expected_outcome: |
+  Asks nothing, picks the fitting concept itself, shows the plan review and stops for approval; writes nothing except an unapproved draft plan.
+context:
+  scaffold_script: place-files.sh

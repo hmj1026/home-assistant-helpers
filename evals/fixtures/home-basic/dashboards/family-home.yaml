@@ -1,0 +1,36 @@
+title: Family
+views:
+  - title: Home
+    path: home
+    type: sections
+    max_columns: 3
+    sections:
+      - type: grid
+        cards:
+          - type: heading
+            heading: Living room
+          - {type: tile, entity: light.living_ceiling}
+          - {type: tile, entity: climate.living_ac}
+          - {type: tile, entity: media_player.living_tv}
+      - type: grid
+        cards:
+          - type: heading
+            heading: Kitchen
+          - {type: tile, entity: light.kitchen}
+          - {type: tile, entity: switch.dishwasher_plug}
+      - type: grid
+        cards:
+          - type: heading
+            heading: Entrance
+          - {type: tile, entity: lock.front_door}
+          - {type: tile, entity: cover.garage_door}
+          - {type: picture-entity, entity: camera.front_porch}
+  - title: Bedrooms
+    path: bedrooms
+    type: sections
+    sections:
+      - type: grid
+        cards:
+          - {type: tile, entity: light.bedroom}
+          - {type: tile, entity: climate.bedroom_ac}
+          - {type: tile, entity: light.kids_room}

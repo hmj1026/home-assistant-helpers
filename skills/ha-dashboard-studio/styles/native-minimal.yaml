@@ -1,0 +1,15 @@
+# Style rules for native-minimal. Applied during Build; each check is verified at handover.
+id: native-minimal
+sketch: |
+  Needs you · nothing
+  On now   [Kitchen light] [Living AC 24°]
+  Routines [Evening] [Movie] [Good night]
+  Rooms    [Living 23°] [Bedroom 22°] [Kids]
+needs: []
+rules:
+- do: Use only cards that ship with Home Assistant.
+  check: The dashboard YAML contains no `custom:` card type.
+- do: 'Leave the look to the viewer''s own theme: no `theme` on views, no card styling.'
+  check: No view has a `theme` key and no card has a `style` or `card_mod` key.
+- do: Colour Tiles with the palette tokens only.
+  check: Every `color` value comes from the chosen palette (its token or purpose table).
