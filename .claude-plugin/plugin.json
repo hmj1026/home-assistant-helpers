@@ -14,5 +14,6 @@
     "skills"
   ],
   "homepage": "https://github.com/hmj1026/home-assistant-helpers",
-  "repository": "https://github.com/hmj1026/home-assistant-helpers"
+  "repository": "https://github.com/hmj1026/home-assistant-helpers",
+  "icon": ".claude-plugin/icon.png"
 }
