@@ -1,4 +1,4 @@
-# Home Assistant Helpers
+# Domotics Helpers
 
 **[English](README.en.md) | 繁體中文**
 
@@ -8,7 +8,7 @@
 
 ```text
 /plugin marketplace add hmj1026/home-assistant-helpers
-/plugin install home-assistant-helpers@home-assistant-helpers
+/plugin install domotics-helpers@domotics-helpers
 ```
 
 本機測試：在 repo 根目錄執行 `/plugin marketplace add ./`。

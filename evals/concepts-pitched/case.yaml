@@ -5,4 +5,4 @@ expected_outcome: |
 context:
   scaffold_script: place-files.sh
 plugins:
-  - ../../plugins/home-assistant-helpers
+  - ../../plugins/domotics-helpers

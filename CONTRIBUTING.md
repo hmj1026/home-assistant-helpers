@@ -2,7 +2,7 @@
 
 ## Layout
 
-- `plugins/home-assistant-helpers/` is the plugin that ships and is submitted to the plugin directory. Keep it to Markdown, JSON, YAML, plain text and PNG files, with no scripts.
+- `plugins/domotics-helpers/` is the plugin that ships and is submitted to the plugin directory. Keep it to Markdown, JSON, YAML, plain text and PNG files, with no scripts.
 - `evals/` holds the evaluation cases. It stays in the repository root so its scaffold scripts never ship. Each `case.yaml` loads the plugin through its `plugins:` path.
 - `.claude-plugin/marketplace.json` lists the plugin from its subfolder.
 
