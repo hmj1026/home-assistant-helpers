@@ -4,3 +4,5 @@ expected_outcome: |
   Reads the Family dashboard into the plan's views unchanged, varies only the look, plans a copy under a new URL path, and flags that Mushroom is not installed.
 context:
   scaffold_script: place-files.sh
+plugins:
+  - ../../plugins/home-assistant-helpers

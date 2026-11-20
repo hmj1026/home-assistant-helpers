@@ -4,3 +4,5 @@ expected_outcome: |
   Surveys read-only, then pitches 2 or 3 clearly different complete concepts fitted to this home, each with a sketch from the real rooms and what it needs installed, and waits for the user's pick.
 context:
   scaffold_script: place-files.sh
+plugins:
+  - ../../plugins/home-assistant-helpers
