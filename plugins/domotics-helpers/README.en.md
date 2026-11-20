@@ -1,4 +1,4 @@
-# Home Assistant Helpers
+# Domotics Helpers
 
 **English | [繁體中文](README.md)**
 
@@ -8,7 +8,7 @@ A Claude Code plugin with skills for Home Assistant.
 
 ```text
 /plugin marketplace add hmj1026/home-assistant-helpers
-/plugin install home-assistant-helpers@home-assistant-helpers
+/plugin install domotics-helpers@domotics-helpers
 ```
 
 Local testing: run `/plugin marketplace add ./` from this repo's root.

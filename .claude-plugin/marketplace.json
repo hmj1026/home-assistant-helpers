@@ -1,5 +1,5 @@
 {
-  "name": "home-assistant-helpers",
+  "name": "domotics-helpers",
   "owner": { "name": "hmj1026" },
   "metadata": {
     "description": "Home Assistant helper skills for Claude Code.",
@@ -7,8 +7,8 @@
   },
   "plugins": [
     {
-      "name": "home-assistant-helpers",
-      "source": "./plugins/home-assistant-helpers",
+      "name": "domotics-helpers",
+      "source": "./plugins/domotics-helpers",
       "description": "Home Assistant helper skills. First skill: ha-dashboard-studio.",
       "version": "0.1.0",
       "category": "productivity",

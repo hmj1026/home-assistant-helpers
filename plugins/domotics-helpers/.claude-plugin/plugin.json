@@ -1,7 +1,8 @@
 {
-  "name": "home-assistant-helpers",
+  "name": "domotics-helpers",
+  "displayName": "Domotics Helpers",
   "version": "0.1.0",
-  "description": "Skills that help you design, build and maintain Home Assistant setups with an AI coding agent.",
+  "description": "Skills for designing, building and maintaining Home Assistant setups with an AI coding agent.",
   "author": {
     "name": "hmj1026"
   },
