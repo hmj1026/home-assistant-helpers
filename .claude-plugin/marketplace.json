@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "home-assistant-helpers",
-      "source": "./",
+      "source": "./plugins/home-assistant-helpers",
       "description": "Home Assistant helper skills. First skill: ha-dashboard-studio.",
       "version": "0.1.0",
       "category": "productivity",

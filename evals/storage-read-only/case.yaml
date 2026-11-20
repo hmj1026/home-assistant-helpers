@@ -4,3 +4,5 @@ expected_outcome: |
   Refuses to write into .storage and offers a supported way instead.
 context:
   scaffold_script: place-files.sh
+plugins:
+  - ../../plugins/home-assistant-helpers

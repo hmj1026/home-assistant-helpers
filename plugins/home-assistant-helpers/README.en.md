@@ -42,7 +42,7 @@ Say "no questions, just make one" and it picks the fitting concept and goes stra
 
 ## Development
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/hmj1026/home-assistant-helpers/blob/master/CONTRIBUTING.md).
 
 ## License
 
