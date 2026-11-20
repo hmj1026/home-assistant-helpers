@@ -42,10 +42,7 @@ Say "no questions, just make one" and it picks the fitting concept and goes stra
 
 ## Development
 
-```text
-claude plugin validate .
-claude plugin eval .
-```
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 

@@ -52,10 +52,7 @@
 
 ## 開發
 
-```text
-claude plugin validate .
-claude plugin eval .
-```
+見 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ## 授權
 
